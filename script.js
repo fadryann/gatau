@@ -1,6 +1,6 @@
 let score = 0;
 let currentQuestion = {};
-let timeLeft = 10;
+let timeLeft = 15;
 let timer;
 
 function generateQuestion() {
@@ -38,7 +38,7 @@ function generateQuestion() {
 
 function resetTimer() {
     clearInterval(timer);
-    timeLeft = 10;
+    timeLeft = 15;
     document.getElementById("timeLeft").innerText = timeLeft;
 
     timer = setInterval(() => {
